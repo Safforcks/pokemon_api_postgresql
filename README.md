@@ -65,8 +65,3 @@ Se tudo estiver certo, você verá mensagens como:
 
 - A tabela `pokeapi` é apagada e recriada em toda execução.
 - Se quiser preservar dados, remova o `DROP TABLE IF EXISTS pokeapi;` do script.
-
-Instale as dependências com:
-
-```bash
-pip install psycopg2-binary requests
