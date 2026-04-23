@@ -1,6 +1,6 @@
 Script em Python para consumir a [PokeAPI](https://pokeapi.co/) e salvar os dados dos 100 primeiros Pokémons em uma tabela PostgreSQL.
 
-## O que o projeto faz
+## O que o código faz
 
 O arquivo `pokeapi.py`:
 
@@ -65,28 +65,6 @@ Se tudo estiver certo, você verá mensagens como:
 
 - A tabela `pokeapi` é apagada e recriada em toda execução.
 - Se quiser preservar dados, remova o `DROP TABLE IF EXISTS pokeapi;` do script.
-
-
-Script em Python para consumir a PokéAPI (https://pokeapi.co/) e salvar os dados dos 100 primeiros Pokémons em uma tabela PostgreSQL.
-
-## O que o código faz
-
-O arquivo `pokeapi.py`:
-
-1. Lê as credenciais do banco pelo módulo `database`.
-2. Conecta ao PostgreSQL utilizando `psycopg2`.
-3. Remove e recria a tabela `pokeapi`.
-4. Busca os Pokémons de `1` a `100` na PokéAPI.
-5. Insere cada resposta JSON na coluna `body` (tipo `JSONB`).
-6. Realiza o `commit` ao final da execução.
-
-## Requisitos
-
-- Python 3.10+
-- PostgreSQL ativo e acessível
-- Pacotes Python:
-  - `psycopg2-binary`
-  - `requests`
 
 Instale as dependências com:
 
