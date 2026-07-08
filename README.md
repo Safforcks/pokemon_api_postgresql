@@ -1,3 +1,4 @@
+24/04/2026
 Script em Python para consumir a [PokeAPI](https://pokeapi.co/) e salvar os dados dos 100 primeiros Pokémons em uma tabela PostgreSQL.
 
 ## O que o código faz
